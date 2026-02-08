@@ -7,37 +7,39 @@ import { MINUTES, cacheResponseFor } from "scripts/cache";
 
 const Repos = [
     {
-        name: "Vencord",
-        description: "Vencord's main repository containing all inbuilt plugins",
-        repo: "Vendicated/Vencord",
+        name: "Potatocord",
+        description:
+            "Potatocord's main repository containing all inbuilt plugins",
+        repo: "potatocord/potatocord",
     },
     {
-        name: "Vencord Installer",
-        description: "Vencord's Installer",
-        repo: "Vencord/Installer",
+        name: "Potatocord Installer",
+        description: "Potatocord's Installer",
+        repo: "potatocord/Installer",
     },
     {
-        name: "vencord.dev",
-        description: "Vencord's official website (the one you're currently on)",
-        repo: "Vencord/vencord.dev",
+        name: "potatocord.dev",
+        description:
+            "Potatocord's official website (the one you're currently on)",
+        repo: "potatocord/vencord.dev",
     },
     {
         name: "Vesktop",
         description:
-            "Vencord's standalone desktop app, offering you a more lightweight, faster and more secure solution for using Vencord",
-        repo: "Vencord/Vesktop",
+            "Potatocord's standalone desktop app, offering you a more lightweight, faster and more secure solution for using Potatocord",
+        repo: "potatocord/Vesktop",
     },
     {
         name: "Vencloud",
         description:
-            "Vencord's Backend providing you with features like settings sync",
-        repo: "Vencord/Vencloud",
+            "Potatocord's Backend providing you with features like settings sync",
+        repo: "potatocord/Vencloud",
     },
     {
         name: "venmic",
         description:
             "Native node module that powers Linux Audio screenshare on Vesktop",
-        repo: "Vencord/venmic",
+        repo: "potatocord/venmic",
     },
 ] satisfies Record<"name" | "description" | "repo", string>[];
 
@@ -80,7 +82,7 @@ cacheResponseFor(Astro.response, 20 * MINUTES);
     description="List of Source Code repositories for all Vencord projects"
 >
     <h1 class="p-page-title">Source Code</h1>
-    <p class="p-subtitle">Vencord's git repositories</p>
+    <p class="p-subtitle">Potatocord's git repositories</p>
 
     <div>
         {repoData.map(data => (data ? <RepoCard {...data} /> : null))}

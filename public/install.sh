@@ -17,7 +17,7 @@ trap 'rm -f "$outfile"' EXIT
 
 echo "Downloading Installer..."
 
-curl -sS https://github.com/Vendicated/VencordInstaller/releases/latest/download/VencordInstallerCli-Linux \
+curl -sS https://github.com/potatocord/Installer/releases/latest/download/PotatocordInstallerCli-Linux \
     --output "$outfile" \
     --location \
     --fail

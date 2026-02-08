@@ -2,39 +2,39 @@ import { readFileSync, writeFileSync } from "fs";
 
 const BaseRedirects = {
     "/vesktop": "https://vesktop.dev",
-    "/github": "https://github.com/Vendicated/Vencord",
+    "/github": "https://github.com/potatocord/potatocord",
     "/discord": "https://discord.gg/D9uwnFnqmd",
-    "/twitter": "https://x.com/vencordapp",
+    "/twitter": "https://x.com/potatocordapp",
     "/support": "https://discord.gg/D9uwnFnqmd",
     "/install": "/download",
     "/plugins.json":
-        "https://raw.githubusercontent.com/Vencord/builds/main/plugins.json",
+        "https://raw.githubusercontent.com/potatocord/builds/main/plugins.json",
     "/plugin-readmes.json":
-        "https://raw.githubusercontent.com/Vencord/builds/main/plugin-readmes.json",
-    "/donate": "https://github.com/sponsors/Vendicated",
-    "/click-to-help/vencord": "https://github.com/sponsors/Vendicated",
+        "https://raw.githubusercontent.com/potatocord/builds/main/plugin-readmes.json",
+    "/donate": "https://github.com/sponsors/potatocord",
+    "/click-to-help/vencord": "https://github.com/sponsors/potatocord",
     "/docs/plugin-requests":
-        "https://github.com/Vencord/plugin-requests/issues/new?template=request.yml",
+        "https://github.com/potatocord/plugin-requests/issues/new?template=request.yml",
 };
 
 const VesktopDownloads = version => ({
-    "/download/vesktop/universal/windows": `https://github.com/Vencord/Vesktop/releases/download/v${version}/Vesktop-Setup-${version}.exe`,
-    "/download/vesktop/amd64/windows-portable": `https://github.com/Vencord/Vesktop/releases/download/v${version}/Vesktop-${version}-win.zip`,
-    "/download/vesktop/arm64/windows-portable": `https://github.com/Vencord/Vesktop/releases/download/v${version}/Vesktop-${version}-arm64-win.zip`,
+    "/download/vesktop/universal/windows": `https://github.com/potatocord/Vesktop/releases/download/v${version}/Vesktop-Setup-${version}.exe`,
+    "/download/vesktop/amd64/windows-portable": `https://github.com/potatocord/Vesktop/releases/download/v${version}/Vesktop-${version}-win.zip`,
+    "/download/vesktop/arm64/windows-portable": `https://github.com/potatocord/Vesktop/releases/download/v${version}/Vesktop-${version}-arm64-win.zip`,
 
-    "/download/vesktop/universal/dmg": `https://github.com/Vencord/Vesktop/releases/download/v${version}/Vesktop-${version}-universal.dmg`,
+    "/download/vesktop/universal/dmg": `https://github.com/potatocord/Vesktop/releases/download/v${version}/Vesktop-${version}-universal.dmg`,
 
-    "/download/vesktop/amd64/tar": `https://github.com/Vencord/Vesktop/releases/download/v${version}/vesktop-${version}.tar.gz`,
-    "/download/vesktop/amd64/rpm": `https://github.com/Vencord/Vesktop/releases/download/v${version}/vesktop-${version}.x86_64.rpm`,
-    "/download/vesktop/amd64/deb": `https://github.com/Vencord/Vesktop/releases/download/v${version}/vesktop_${version}_amd64.deb`,
-    "/download/vesktop/amd64/appimage": `https://github.com/Vencord/Vesktop/releases/download/v${version}/Vesktop-${version}.AppImage`,
+    "/download/vesktop/amd64/tar": `https://github.com/potatocord/Vesktop/releases/download/v${version}/vesktop-${version}.tar.gz`,
+    "/download/vesktop/amd64/rpm": `https://github.com/potatocord/Vesktop/releases/download/v${version}/vesktop-${version}.x86_64.rpm`,
+    "/download/vesktop/amd64/deb": `https://github.com/potatocord/Vesktop/releases/download/v${version}/vesktop_${version}_amd64.deb`,
+    "/download/vesktop/amd64/appimage": `https://github.com/potatocord/Vesktop/releases/download/v${version}/Vesktop-${version}.AppImage`,
 
-    "/download/vesktop/arm64/dmg": `https://github.com/Vencord/Vesktop/releases/download/v${version}/Vesktop-${version}-arm64.dmg`,
+    "/download/vesktop/arm64/dmg": `https://github.com/potatocord/Vesktop/releases/download/v${version}/Vesktop-${version}-arm64.dmg`,
 
-    "/download/vesktop/arm64/appimage": `https://github.com/Vencord/Vesktop/releases/download/v${version}/Vesktop-${version}-arm64.AppImage`,
-    "/download/vesktop/arm64/tar": `https://github.com/Vencord/Vesktop/releases/download/v${version}/vesktop-${version}-arm64.tar.gz`,
-    "/download/vesktop/arm64/deb": `https://github.com/Vencord/Vesktop/releases/download/v${version}/vesktop_${version}_arm64.deb`,
-    "/download/vesktop/arm64/rpm": `https://github.com/Vencord/Vesktop/releases/download/v${version}/vesktop-${version}.aarch64.rpm`,
+    "/download/vesktop/arm64/appimage": `https://github.com/potatocord/Vesktop/releases/download/v${version}/Vesktop-${version}-arm64.AppImage`,
+    "/download/vesktop/arm64/tar": `https://github.com/potatocord/Vesktop/releases/download/v${version}/vesktop-${version}-arm64.tar.gz`,
+    "/download/vesktop/arm64/deb": `https://github.com/potatocord/Vesktop/releases/download/v${version}/vesktop_${version}_arm64.deb`,
+    "/download/vesktop/arm64/rpm": `https://github.com/potatocord/Vesktop/releases/download/v${version}/vesktop-${version}.aarch64.rpm`,
 });
 
 const Redirects = {
