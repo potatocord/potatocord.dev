@@ -4,13 +4,12 @@
 
     import { IS_SERVER } from "scripts/constants";
 
-    const options = ["Windows", "Linux", "Mac", "Browser"] as const;
+    const options = ["Windows", "Linux", "Mac"] as const;
 
     const accents: { [option in (typeof options)[number]]: string } = {
         Windows: "Blue",
         Linux: "Green",
         Mac: "Yellow",
-        Browser: "Orange",
     };
 
     const initialValue = IS_SERVER
@@ -62,10 +61,6 @@
             <div in:fade={{ duration: 150 }}>
                 <slot name="macTab" />
             </div>
-        {:else if $selected === "Browser"}
-            <div in:fade={{ duration: 150 }}>
-                <slot name="browserTab" />
-            </div>
         {/if}
     </section>
 </div>
@@ -79,7 +74,7 @@
     nav {
         display: grid;
         gap: 1rem;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         margin-bottom: 1rem;
     }
 

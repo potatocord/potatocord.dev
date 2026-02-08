@@ -16,11 +16,10 @@ import DownloadTabs from "components/pages/download/index.svelte";
     breadcrumbs={[["Download", "/download"]]}
 >
     <DownloadTabs client:load>
-        <h1 class="p-page-title" slot="title">Download Potatocord</h1>
         <WindowsTab slot="windowsTab" />
         <LinuxTab slot="linuxTab" />
         <MacTab slot="macTab" />
-        <BrowserTab slot="browserTab" />
+        <!-- <BrowserTab slot="browserTab" /> -->
     </DownloadTabs>
 </Layout>
 
