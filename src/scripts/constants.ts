@@ -1,4 +1,4 @@
-export const DISCORD_INVITE = "https://discord.gg/D9uwnFnqmd";
+
 export const GITHUB_URL = "https://github.com/potatocord/potatocord";
 export const SOURCE_CODE = "https://github.com/potatocord/vencord.dev";
 export const VENCORD_CLOUD_SOURCE_CODE_URL =

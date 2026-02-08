@@ -3,9 +3,9 @@ import { readFileSync, writeFileSync } from "fs";
 const BaseRedirects = {
     "/vesktop": "https://vesktop.dev",
     "/github": "https://github.com/potatocord/potatocord",
-    "/discord": "https://discord.gg/D9uwnFnqmd",
+
     "/twitter": "https://x.com/potatocordapp",
-    "/support": "https://discord.gg/D9uwnFnqmd",
+
     "/install": "/download",
     "/plugins.json":
         "https://raw.githubusercontent.com/potatocord/builds/main/plugins.json",
